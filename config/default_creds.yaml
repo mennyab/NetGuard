@@ -1,0 +1,35 @@
+# סיסמאות ברירת מחדל מוכרות.
+# משמשות לשני דברים:
+#   1. ניסיון התחברות כשפרטי הגישה שהוזנו נכשלים (עד max_per_device ניסיונות)
+#   2. זיהוי חולשה: התקן שמקבל סיסמת ברירת מחדל = חולשה קריטית
+# המערכת בוחרת לפי היצרן שזוהה, ולא מנסה את כל הרשימה.
+
+generic:
+  - { username: "",      password: "cisco" }
+  - { username: "cisco", password: "cisco" }
+  - { username: "admin", password: "admin" }
+
+vendors:
+  cisco:
+    - { username: "cisco", password: "cisco" }
+    - { username: "admin", password: "cisco" }
+    - { username: "",      password: "cisco" }
+  hp_aruba:
+    - { username: "admin",   password: "" }
+    - { username: "manager", password: "manager" }
+  juniper:
+    - { username: "root", password: "" }
+  mikrotik:
+    - { username: "admin", password: "" }
+  tp_link:
+    - { username: "admin", password: "admin" }
+  d_link:
+    - { username: "admin", password: "" }
+  ubiquiti:
+    - { username: "ubnt", password: "ubnt" }
+
+# סיסמאות enable נפוצות
+enable_passwords:
+  - "cisco"
+  - "class"
+  - "enable"

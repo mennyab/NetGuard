@@ -1,0 +1,41 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== סביבה וירטואלית =====
+.venv/
+venv/
+env/
+
+# ===== מידע רגיש של NetGuard — לעולם לא להעלות! =====
+# מסד הנתונים (סריקות, חולשות, יומן ביקורת)
+storage/*.db
+storage/netguard.db
+# גיבויי קונפיגורציות של ציוד רשת אמיתי
+storage/backups/
+# פרופילים (מכילים פרטי גישה מוצפנים)
+storage/profiles/
+# גופן שהועתק מהמערכת
+storage/fonts/
+# יומן ביקורת
+storage/audit.log
+*.cfg
+*.ngp
+
+# ===== קבצים זמניים / פלט =====
+*.pdf
+*.html
+!reports/templates/*.html
+_*.png
+*.log
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

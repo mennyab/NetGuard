@@ -1,0 +1,36 @@
+# NetGuard - network discovery & security assessment
+# Recommended: Python 3.12 (some networking libs lag behind 3.14)
+
+# --- UI ---
+streamlit>=1.40
+plotly>=5.24
+pandas>=2.2
+
+# --- Device access (SSH / Telnet, multi-vendor) ---
+netmiko>=4.4          # includes ntc-templates/textfsm for parsing "show" output
+paramiko>=3.4
+
+# --- Discovery ---
+scapy>=2.6            # ARP sweep (requires Npcap on Windows + admin rights)
+python-nmap>=0.7.1    # wrapper for nmap.exe (port / OS / service scan)
+pysnmp>=7.1           # SNMP: sysDescr, LLDP/CDP MIBs, bridge (MAC) tables
+mac-vendor-lookup>=0.1.12
+
+# --- Topology ---
+networkx>=3.3
+pyvis>=0.3.2
+
+# --- Security assessment ---
+zxcvbn>=4.4.28        # password strength estimation
+
+# --- Storage / config / security ---
+pyyaml>=6.0
+cryptography>=43.0    # encrypting saved credential profiles
+
+# --- Reports ---
+jinja2>=3.1
+xhtml2pdf>=0.2.16     # HTML -> PDF, pure Python (works on Windows)
+python-bidi>=0.4.2    # סידור RTL (עברית) ב-PDF
+
+# --- System info ---
+psutil>=5.9           # זיהוי כרטיסי רשת (מגיע גם כתלות של scapy)
