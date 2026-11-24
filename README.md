@@ -1,5 +1,17 @@
 # 🛡️ NetGuard
 
+**NetGuard** connects to an enterprise network, automatically discovers its switches, routers,
+and end devices, and builds a graphical topology map — reaching remote segments through device
+pivoting (nested Telnet/SSH) when they aren't directly routable. It scans each device for
+vulnerabilities — weak passwords, open ports, insecure services, and risky configurations — and
+produces a report with a security score per component. For every finding it proposes an exact
+remediation command that is **applied only after explicit user approval**, with a configuration
+backup and rollback option.
+
+> Built with Python + Streamlit · netmiko · scapy · nmap · pysnmp · networkx/pyvis
+
+---
+
 מערכת שמגלה את ההתקנים ברשת הארגונית, ממפה את הטופולוגיה, מאתרת חולשות ומציעה תיקונים. תיקון מתבצע **רק באישור המשתמש**.
 
 ## דרישות מוקדמות (Windows)
